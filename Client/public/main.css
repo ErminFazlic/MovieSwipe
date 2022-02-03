@@ -1,0 +1,54 @@
+.col {
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+	
+.loginContainer{
+	padding-top:10%
+}
+
+.loginButton {
+	transition-duration: 0.4s;
+	border: 2px solid pink;
+	font-size:20px;
+	border-radius:8px ;
+}
+
+.loginButton:hover{
+	background: pink;
+	font-size:24px;
+}
+
+.movieImage{
+	height:75vh;
+	width: 50vh;
+}
+
+.heartButton{
+	border-radius:15px;
+	font-size: 40px;
+	transition-duration: 0.4s;
+	border: 2px solid pink;
+	color: pink;
+}
+
+.heartButton:hover{
+	background-color:pink;
+	font-size:44px;
+	color: white;
+}
+
+.heartBreakButton{
+	border-radius:15px;
+	font-size:40px;
+	transition-duration: 0.4s;
+	color: red;
+	border: 2px solid red;
+}
+.heartBreakButton:hover{
+	background-color:red;
+	font-size:44px;
+	color: white;
+	
+}
+
