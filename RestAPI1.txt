@@ -1,0 +1,47 @@
+1.What classes and objects should exist in our model?
+
+User {
+
+id : number,
+email : string,
+password : string,
+username : string,
+liked : array of movie IDs,
+disliked : array of movie IDs,
+friends : array of user IDs
+
+}
+
+Movie {
+
+id: number,
+likes: array of user IDs
+
+}
+
+2. What operations do we need to perform on these entities?
+- Add a user to friends list given their username
+- Like a movie (add it to liked list) given it's ID
+- Dislike a movie (add it to disliked list) given it's ID
+- Find the union between two friends' liked list given their IDs
+
+3.
+- A PUT request to /users/likes/[id] should add the movie ID to liked list for the user,
+ return 200 OK
+
+- A PUT request to /users/dislikes/[id] should add the movie ID to disliked list for
+ the user, return 200 OK
+
+- A GET request to /users/friends/[UserID]/matches/ should return the union of the user's and the
+ friend's (from ID) liked lists, return 200 OK
+
+- A PUT request to /users/friends/[UserID] should add the friend's ID to friends list, return 200 OK
+
+- A POST request to /user/ should create a new user, return 201 Created
+
+- A PUT request to /movies/[MovieID]/likes/[UserID] check if there is a database entry for that movie
+ID, if there is then update it's likes with the user ID and return 200 OK. Else create one and add
+user ID to likes and return 201 Created.
+
+- A Get request to /movies/[MovieID]matches/[UserID] should return union between movie's likes list
+and user's friends list, return 200 OK
