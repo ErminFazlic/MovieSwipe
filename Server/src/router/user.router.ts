@@ -46,3 +46,19 @@ userRouter.put("/:userID/friends/:friendID", async (req: Request, res:Response)=
        
         }
 });
+
+// Get friends
+userRouter.get("/:userID/friends", async (req: Request, res:Response)=> {
+
+    try{
+        
+        const userID : number = parseInt(req.params.userID, 10);
+
+        const friends : number[] = await UserService.getFriends(userID);
+        res.status(200).send(friends);
+    } catch (e : any) {
+
+        res.status(500).send(e.message);
+       
+        }
+});

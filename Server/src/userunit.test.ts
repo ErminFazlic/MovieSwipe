@@ -15,3 +15,14 @@ test("Add friend to empty friends list", () => {
  }).catch((e : any) => fail(e.message));
 
 });
+
+
+test("Get empty friends list", () => {
+    const id : number = new Date().valueOf();
+    const usertest : User = {id:id, email:"ermin@gmail.com", password:"9999", username:"ermino", liked:[], disliked:[], friends:[]};
+    UserService.getFriends(id).then((friends : number[]) => {
+    expect(friends).toEqual([]);
+   
+    }).catch((e : any) => fail(e.message));
+   
+   });

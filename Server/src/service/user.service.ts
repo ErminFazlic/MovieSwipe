@@ -34,3 +34,10 @@ export const addFriend = async (friendID:number, userID:number): Promise<Array<n
 
     return user.friends;
 }
+
+export const getFriends = async (userID:number): Promise<Array<number>> =>{
+    if (!(userID in users)){
+        throw new Error("User does not exist.");
+    }
+    return users[userID].friends;
+}
