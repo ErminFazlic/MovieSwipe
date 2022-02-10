@@ -17,11 +17,20 @@ export const addUser = async (email:string, password:string, username:string): P
     return users[id];
 }
 
-export const addFriend = async (friendID:number, userID:number): Promise<Array<User>> =>{
+export const addFriend = async (friendID:number, userID:number): Promise<Array<number>> =>{
 
     if (!(friendID in users)){
         throw new Error("User does not exist.");
-
     }
 
+    const user = users[userID];
+    const friend = users[friendID];
+
+    user.friends.push(friendID);
+    friend.friends.push(userID);
+
+    users[userID] = user;
+    users[friendID] = friend;
+
+    return user.friends;
 }
