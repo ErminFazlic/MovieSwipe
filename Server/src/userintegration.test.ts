@@ -7,8 +7,8 @@ import { app } from "./start";
 const request : Supertest.SuperTest<Supertest.Test> = Supertest.default(app);
 
 
-/*
-test("End-to-end test", async () => {
+
+test("get empty friends list", async () => {
  const usertest : User = {id:new Date().valueOf(), email:"ermin@gmail.com", password:"9999", username:"ermino", liked:[], disliked:[], friends:[]};
 
  const res = await request.get('/users/'+usertest.id.toString+'/friends');
@@ -16,4 +16,4 @@ test("End-to-end test", async () => {
 
  expect(res.body).toEqual([]);
 
-});*/
+});
