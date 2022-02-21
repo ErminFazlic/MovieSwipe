@@ -8,7 +8,7 @@
 
  import express from "express";
 
- import { userRouter } from "./router/user.router";
+ import { makeDefaultUserRouter } from "./router/user.router";
  
  
  
@@ -35,4 +35,4 @@
  
  app.use(express.json());
  
- app.use("/users", userRouter);
+ app.use("/users", makeDefaultUserRouter);
