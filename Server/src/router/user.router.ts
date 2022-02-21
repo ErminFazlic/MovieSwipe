@@ -1,16 +1,16 @@
 import express, { Request, Response} from "express";
 
-import * as UserService from "../service/user.service";
+import {makeUserServices, UserServices}from "../service/user.service";
 
 import { User } from "../model/user.interface";
 import { request } from "http";
 
 
-
-export const userRouter = express.Router();
-
+export function makeUserRouter(UserServices : UserServices) : express.Router{
+const userRouter = express.Router();
 
 //create user
+//validation username & password??
 userRouter.post("/", async (req: Request, res: Response) => {
 
  try {  
@@ -19,7 +19,7 @@ userRouter.post("/", async (req: Request, res: Response) => {
  const password : string = req.body.password;
  const username : string = req.body.username;
 
- const user : User = await UserService.addUser(email, password, username);
+ const user : User = await UserServices.addUser(email, password, username);
 
  res.status(201).send(user);
 
@@ -38,7 +38,7 @@ userRouter.put("/:userID/friends/:friendID", async (req: Request, res:Response)=
         const userID : number = parseInt(req.params.userID, 10);
         const friendID : number = parseInt(req.params.friendID, 10);
 
-        const friends : number[] = await UserService.addFriend(friendID, userID);
+        const friends : number[] = await UserServices.addFriend(friendID, userID);
         res.status(200).send(friends);
     } catch (e : any) {
 
@@ -54,7 +54,7 @@ userRouter.get("/:userID/friends", async (req: Request, res:Response)=> {
         
         const userID : number = parseInt(req.params.userID, 10);
 
-        const friends : number[] = await UserService.getFriends(userID);
+        const friends : number[] = await UserServices.getFriends(userID);
         res.status(200).send(friends);
     } catch (e : any) {
 
@@ -62,3 +62,9 @@ userRouter.get("/:userID/friends", async (req: Request, res:Response)=> {
        
         }
 });
+return userRouter;
+}
+
+export function makeDefaultUserRouter():express.Router{
+    return makeUserRouter(makeUserServices());
+}

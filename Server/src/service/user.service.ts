@@ -2,47 +2,59 @@ import { User } from "../model/user.interface";
 
 
 // In-Memory Store
-const users : { [key: number]: User } = {};
+export class UserServices{
+    private users:{[key: number]:User};
 
-export const addUser = async (email:string, password:string, username:string): Promise<User> => {
-    const id = new Date().valueOf();
-    users[id] = 
-    {email : email,
-    password:password,
-    username:username,
-    id:id,
-    liked:[],
-    disliked:[],
-    friends:[]};
-    return users[id];
-}
-
-export const addFriend = async (friendID:number, userID:number): Promise<Array<number>> =>{
-
-    if (!(friendID in users)){
-        throw new Error("User does not exist.");
+    constructor(users:{[key:number] : User}){
+        this.users=users;
     }
 
-    const user = users[userID];
-    const friend = users[friendID];
-
-    user.friends.push(friendID);
-    friend.friends.push(userID);
-
-    users[userID] = user;
-    users[friendID] = friend;
-
-    return user.friends;
-}
-
-export const getFriends = async (userID:number): Promise<Array<number>> =>{
-	try{
-		if (!(userID in users)){
-        throw new Error("User does not exist.");
+addUser = async (email:string, password:string, username:string): Promise<User> => {
+        const id = new Date().valueOf();
+        this.users[id] = 
+        {email : email,
+        password:password,
+        username:username,
+        id:id,
+        liked:[],
+        disliked:[],
+        friends:[]};
+        return this.users[id];
     }
-    return users[userID].friends;
-	}catch(e:any){
-		return [];
-	}
     
+    addFriend = async (friendID:number, userID:number): Promise<Array<number>> =>{
+    
+        if (!(friendID in this.users)){
+            throw new Error("User does not exist.");
+        }
+    
+        const user = this.users[userID];
+        const friend = this.users[friendID];
+    
+        user.friends.push(friendID);
+        friend.friends.push(userID);
+    
+        this.users[userID] = user;
+        this.users[friendID] = friend;
+    
+        return user.friends;
+    }
+    
+    getFriends = async (userID:number): Promise<Array<number>> =>{
+        try{
+            if (!(userID in this.users)){
+            throw new Error("User does not exist.");
+           
+        }
+        return this.users[userID].friends;
+        }catch(e:any){
+            return [];
+        }
+        
+    }
 }
+
+export function makeUserServices():UserServices{
+    return new UserServices({});
+}
+
