@@ -2,8 +2,16 @@ import { User } from "../model/user.interface";
 
 
 // In-Memory Store
-export class UserServices{
-    public users:{[key: number]:User};
+export interface IUserServices {
+    addUser(email:string, password:string, username:string):Promise<User>
+    addFriend (friendID:number, userID:number): Promise<Array<number>>
+    getFriends (userID:number): Promise<Array<number>>
+}
+export class UserServices implements IUserServices{
+    public users:{[key: number]:User}={
+        0:{id:24,email:"vale@gmail",password:"vv",username:"faith",
+        liked:[],disliked:[],friends:[45]}
+    }
 
     constructor(users:{[key:number] : User}){
         this.users=users;

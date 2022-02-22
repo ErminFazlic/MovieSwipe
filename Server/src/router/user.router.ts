@@ -1,12 +1,12 @@
 import express, { Request, Response} from "express";
 
-import {makeUserServices, UserServices}from "../service/user.service";
+import {makeUserServices, IUserServices}from "../service/user.service";
 
 import { User } from "../model/user.interface";
 import { request } from "http";
 
 
-export function makeUserRouter(UserServices : UserServices) : express.Router{
+export function makeUserRouter(UserServices : IUserServices) : express.Router{
 const userRouter = express.Router();
 
 //create user

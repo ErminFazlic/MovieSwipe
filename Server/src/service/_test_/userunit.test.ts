@@ -1,8 +1,8 @@
 
 
-import { User } from "./model/user.interface";
+import { User } from "../../model/user.interface";
 
-import * as US from "./service/user.service"
+import * as US from "../../service/user.service";
 
 //test the router layer
 
