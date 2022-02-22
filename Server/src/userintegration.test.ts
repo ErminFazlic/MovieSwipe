@@ -2,10 +2,8 @@ import * as Supertest from "supertest";
 import { User } from "./model/user.interface";
 import { app } from "./start";
 
-
-
-const request : Supertest.SuperTest<Supertest.Test> = Supertest.default(app);
-
+const request : Supertest.SuperTest<Supertest.Test> = Supertest.default
+(app);
 
 
 test("get empty friends list", async () => {
@@ -15,5 +13,6 @@ test("get empty friends list", async () => {
  expect(res.statusCode).toEqual(200);
 
  expect(res.body).toEqual([]);
+ 
 
 });

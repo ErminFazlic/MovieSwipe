@@ -62,7 +62,7 @@ userRouter.get("/:userID/friends", async (req: Request, res:Response)=> {
        
         }
 });
-return userRouter;
+    return userRouter;
 }
 
 export function makeDefaultUserRouter():express.Router{

@@ -3,7 +3,7 @@ import { User } from "../model/user.interface";
 
 // In-Memory Store
 export class UserServices{
-    private users:{[key: number]:User};
+    public users:{[key: number]:User};
 
     constructor(users:{[key:number] : User}){
         this.users=users;
@@ -12,10 +12,11 @@ export class UserServices{
 addUser = async (email:string, password:string, username:string): Promise<User> => {
         const id = new Date().valueOf();
         this.users[id] = 
-        {email : email,
+        {
+        id:id,
+        email : email,
         password:password,
         username:username,
-        id:id,
         liked:[],
         disliked:[],
         friends:[]};
