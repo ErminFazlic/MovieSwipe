@@ -1,4 +1,6 @@
+//Create a user
 When the app first starts, the user sees the login page
+When the user clicks Create Account the user sees the register page
 The frontend sends a [POST] request to the backend with body name, email and password
 (check if user is already taken, if not add the user to db)
 The backend returns a response with body 201: Created
@@ -11,3 +13,17 @@ The frontend sends a [GET] request to the backend with body email and password
 (if not found)
 --The backend returns a response with body 404 NOT FOUND
 --The frontend displays the login page
+
+//Home page 
+When the logs in, the user sees the home page
+The frontend sends a [GET] request to the backend with body GET MOVIE info
+The frontend displays the movie with two options
+(depending if user like/dislike)
+The frontend sends a [POST] request to the backend with body username, movieid to like/dislike array
+
+//add friends 
+When the user presses the Add Friend, the user sees the popup
+The frontend sends a [GET] request to the backend with body email/username
+(check if user exists)
+-The backend returns a response with body user added/was not found
+The frontend displays the popup 
