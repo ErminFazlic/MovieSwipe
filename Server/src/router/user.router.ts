@@ -6,30 +6,23 @@ import { User } from "../model/user.interface";
 import { request } from "http";
 
 
-export function makeUserRouter(UserServices : IUserServices) : express.Router{
-const userRouter = express.Router();
+export function makeUserRouter(UserServices : IUserServices) : express.Router {
+    const userRouter = express.Router();
 
-//create user
-//validation username & password??
-userRouter.post("/", async (req: Request, res: Response) => {
+    //create user
+    //validation username & password??
+    userRouter.post("/", async (req: Request, res: Response) => {
+          try {  
+            const email : string = req.body.email;
+            const password : string = req.body.password;
+            const username : string = req.body.username;
+            const user : User = await UserServices.addUser(email, password, username);
 
- try {  
-
- const email : string = req.body.email;
- const password : string = req.body.password;
- const username : string = req.body.username;
-
- const user : User = await UserServices.addUser(email, password, username);
-
- res.status(201).send(user);
-
- } catch (e : any) {
-
- res.status(500).send(e.message);
-
- }
-
-});
+            res.status(201).send(user);
+          } catch (e : any) {
+              res.status(500).send(e.message);
+          }
+    });
 
 //add friend
 userRouter.put("/:userID/friends/:friendID", async (req: Request, res:Response)=> {
@@ -65,6 +58,6 @@ userRouter.get("/:userID/friends", async (req: Request, res:Response)=> {
     return userRouter;
 }
 
-export function makeDefaultUserRouter():express.Router{
+export function makeDefaultUserRouter() : express.Router{
     return makeUserRouter(makeUserServices());
 }
