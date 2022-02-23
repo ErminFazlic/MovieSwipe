@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de94407f-d8bf-4181-910c-fc24e413e67c" name="Changes" comment="Installed react-bootstrap">
-      <change afterPath="$PROJECT_DIR$/YourFirstView.txt" afterDir="false" />
+    <list default="true" id="de94407f-d8bf-4181-910c-fc24e413e67c" name="Changes" comment="txt notes">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YourFirstView.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YourFirstView.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
       <workItem from="1644926977710" duration="1026000" />
       <workItem from="1645006957506" duration="6121000" />
       <workItem from="1645090750498" duration="1915000" />
-      <workItem from="1645448112451" duration="7129000" />
+      <workItem from="1645448112451" duration="8822000" />
     </task>
     <task id="LOCAL-00001" summary="Created react template in Client&#10;Added cors to Server">
       <created>1645613486726</created>
@@ -73,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645613719387</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="txt notes">
+      <created>1645633952513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645633952513</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +119,7 @@
     <MESSAGE value="Created react template in Client&#10;Added cors to Server" />
     <MESSAGE value="fixed typo" />
     <MESSAGE value="Installed react-bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed react-bootstrap" />
+    <MESSAGE value="txt notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="txt notes" />
   </component>
 </project>
