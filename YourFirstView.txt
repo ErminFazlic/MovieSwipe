@@ -27,3 +27,5 @@ The frontend sends a [GET] request to the backend with body email/username
 (check if user exists)
 -The backend returns a response with body user added/was not found
 The frontend displays the popup 
+
+//
