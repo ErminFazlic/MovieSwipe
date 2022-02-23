@@ -1,7 +1,7 @@
 import exp from "constants";
 import Express from "express";
 import { userRouter } from "./router/user.router";
-import * as cors from "cors";
+import cors from "cors";
 
 
 const app : Express.Express = Express();
