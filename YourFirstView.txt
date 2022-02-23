@@ -8,22 +8,22 @@ The frontend displays the log in
 The user performs the following input: email password
 The frontend sends a [GET] request to the backend with body email and password
 (check for user in db, if found ->)
---The backend returns a response with body 200 OK
+--The backend returns a response with body 200 OK and userID
 --The frontend displays the home page
 (if not found)
---The backend returns a response with body 404 NOT FOUND
+--The backend returns a response with body 401 Unauthorized
 --The frontend displays the login page
 
 //Home page 
 When the logs in, the user sees the home page
-The frontend sends a [GET] request to the backend with body GET MOVIE info
-The frontend displays the movie with two options
+The frontend sends a [GET] request to the backend with body userID
+The frontend displays the movies that the user has not yet seen with two options
 (depending if user like/dislike)
-The frontend sends a [POST] request to the backend with body username, movieid to like/dislike array
+The frontend sends a [POST] request to the backend with body username, movieid to like/dislike
 
 //add friends 
 When the user presses the Add Friend, the user sees the popup
-The frontend sends a [GET] request to the backend with body email/username
+The frontend sends a [PUT] request to the backend with body email/username
 (check if user exists)
 -The backend returns a response with body user added/was not found
 The frontend displays the popup 

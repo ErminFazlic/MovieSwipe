@@ -1,0 +1,310 @@
+Index: Client/v1/public/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"utf-8\" />\r\n    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\r\n    <meta name=\"theme-color\" content=\"#000000\" />\r\n    <meta\r\n      name=\"description\"\r\n      content=\"Web site created using create-react-app\"\r\n    />\r\n    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\r\n    <!--\r\n      manifest.json provides metadata used when your web app is installed on a\r\n      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/\r\n    -->\r\n    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\r\n    <!--\r\n      Notice the use of %PUBLIC_URL% in the tags above.\r\n      It will be replaced with the URL of the `public` folder during the build.\r\n      Only files inside the `public` folder can be referenced from the HTML.\r\n\r\n      Unlike \"/favicon.ico\" or \"favicon.ico\", \"%PUBLIC_URL%/favicon.ico\" will\r\n      work correctly both with client-side routing and a non-root public URL.\r\n      Learn how to configure a non-root public URL by running `npm run build`.\r\n    -->\r\n    <title>React App</title>\r\n  </head>\r\n  <body>\r\n    <noscript>You need to enable JavaScript to run this app.</noscript>\r\n    <div id=\"root\"></div>\r\n    <!--\r\n      This HTML file is a template.\r\n      If you open it directly in the browser, you will see an empty page.\r\n\r\n      You can add webfonts, meta tags, or analytics to this file.\r\n      The build step will place the bundled scripts into the <body> tag.\r\n\r\n      To begin the development, run `npm start` or `yarn start`.\r\n      To create a production bundle, use `npm run build` or `yarn build`.\r\n    -->\r\n  </body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Client/v1/public/index.html b/Client/v1/public/index.html
+--- a/Client/v1/public/index.html	(revision 015e67d6f49c414feefde359cdca8f924da8f077)
++++ b/Client/v1/public/index.html	(date 1645637718008)
+@@ -9,35 +9,23 @@
+       name="description"
+       content="Web site created using create-react-app"
+     />
++    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
++    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
++    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
++    <link rel="manifest" href="/site.webmanifest">
++    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
++    <meta name="msapplication-TileColor" content="#da532c">
++    <meta name="theme-color" content="#ffffff">
+     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+     <!--
+       manifest.json provides metadata used when your web app is installed on a
+       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+     -->
+     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+-    <!--
+-      Notice the use of %PUBLIC_URL% in the tags above.
+-      It will be replaced with the URL of the `public` folder during the build.
+-      Only files inside the `public` folder can be referenced from the HTML.
+-
+-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+-      work correctly both with client-side routing and a non-root public URL.
+-      Learn how to configure a non-root public URL by running `npm run build`.
+-    -->
+     <title>React App</title>
+   </head>
+   <body>
+     <noscript>You need to enable JavaScript to run this app.</noscript>
+     <div id="root"></div>
+-    <!--
+-      This HTML file is a template.
+-      If you open it directly in the browser, you will see an empty page.
+-
+-      You can add webfonts, meta tags, or analytics to this file.
+-      The build step will place the bundled scripts into the <body> tag.
+-
+-      To begin the development, run `npm start` or `yarn start`.
+-      To create a production bundle, use `npm run build` or `yarn build`.
+-    -->
+   </body>
+ </html>
+Index: Client/v1/src/App.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\nimport logo from './logo.svg';\r\nimport './App.css';\r\n\r\nfunction App() {\r\n  return (\r\n    <div className=\"App\">\r\n      <header className=\"App-header\">\r\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\r\n        <p>\r\n          Edit <code>src/App.tsx</code> and save to reload.\r\n        </p>\r\n        <a\r\n          className=\"App-link\"\r\n          href=\"https://reactjs.org\"\r\n          target=\"_blank\"\r\n          rel=\"noopener noreferrer\"\r\n        >\r\n          Learn React\r\n        </a>\r\n      </header>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Client/v1/src/App.tsx b/Client/v1/src/App.tsx
+--- a/Client/v1/src/App.tsx	(revision 015e67d6f49c414feefde359cdca8f924da8f077)
++++ b/Client/v1/src/App.tsx	(date 1645637245956)
+@@ -6,18 +6,6 @@
+   return (
+     <div className="App">
+       <header className="App-header">
+-        <img src={logo} className="App-logo" alt="logo" />
+-        <p>
+-          Edit <code>src/App.tsx</code> and save to reload.
+-        </p>
+-        <a
+-          className="App-link"
+-          href="https://reactjs.org"
+-          target="_blank"
+-          rel="noopener noreferrer"
+-        >
+-          Learn React
+-        </a>
+       </header>
+     </div>
+   );
+Index: Client/v1/src/App.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.App {\r\n  text-align: center;\r\n}\r\n\r\n.App-logo {\r\n  height: 40vmin;\r\n  pointer-events: none;\r\n}\r\n\r\n@media (prefers-reduced-motion: no-preference) {\r\n  .App-logo {\r\n    animation: App-logo-spin infinite 20s linear;\r\n  }\r\n}\r\n\r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n\r\n.App-link {\r\n  color: #61dafb;\r\n}\r\n\r\n@keyframes App-logo-spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Client/v1/src/App.css b/Client/v1/src/App.css
+--- a/Client/v1/src/App.css	(revision 015e67d6f49c414feefde359cdca8f924da8f077)
++++ b/Client/v1/src/App.css	(date 1645637254653)
+@@ -1,38 +1,0 @@
+-.App {
+-  text-align: center;
+-}
+-
+-.App-logo {
+-  height: 40vmin;
+-  pointer-events: none;
+-}
+-
+-@media (prefers-reduced-motion: no-preference) {
+-  .App-logo {
+-    animation: App-logo-spin infinite 20s linear;
+-  }
+-}
+-
+-.App-header {
+-  background-color: #282c34;
+-  min-height: 100vh;
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  justify-content: center;
+-  font-size: calc(10px + 2vmin);
+-  color: white;
+-}
+-
+-.App-link {
+-  color: #61dafb;
+-}
+-
+-@keyframes App-logo-spin {
+-  from {
+-    transform: rotate(0deg);
+-  }
+-  to {
+-    transform: rotate(360deg);
+-  }
+-}
+Index: Client/v1/public/manifest.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"short_name\": \"React App\",\r\n  \"name\": \"Create React App Sample\",\r\n  \"icons\": [\r\n    {\r\n      \"src\": \"favicon.ico\",\r\n      \"sizes\": \"64x64 32x32 24x24 16x16\",\r\n      \"type\": \"image/x-icon\"\r\n    },\r\n    {\r\n      \"src\": \"logo192.png\",\r\n      \"type\": \"image/png\",\r\n      \"sizes\": \"192x192\"\r\n    },\r\n    {\r\n      \"src\": \"logo512.png\",\r\n      \"type\": \"image/png\",\r\n      \"sizes\": \"512x512\"\r\n    }\r\n  ],\r\n  \"start_url\": \".\",\r\n  \"display\": \"standalone\",\r\n  \"theme_color\": \"#000000\",\r\n  \"background_color\": \"#ffffff\"\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Client/v1/public/manifest.json b/Client/v1/public/manifest.json
+--- a/Client/v1/public/manifest.json	(revision 015e67d6f49c414feefde359cdca8f924da8f077)
++++ b/Client/v1/public/manifest.json	(date 1645637630443)
+@@ -1,6 +1,6 @@
+ {
+-  "short_name": "React App",
+-  "name": "Create React App Sample",
++  "short_name": "Movie Swipe",
++  "name": "Movie Swipe App",
+   "icons": [
+     {
+       "src": "favicon.ico",
+Index: Client/v1/public/browserconfig.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Client/v1/public/browserconfig.xml b/Client/v1/public/browserconfig.xml
+new file mode 100644
+--- /dev/null	(date 1645637490000)
++++ b/Client/v1/public/browserconfig.xml	(date 1645637490000)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<browserconfig>
++    <msapplication>
++        <tile>
++            <square150x150logo src="/mstile-150x150.png"/>
++            <TileColor>#da532c</TileColor>
++        </tile>
++    </msapplication>
++</browserconfig>
+Index: Client/v1/public/site.webmanifest
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Client/v1/public/site.webmanifest b/Client/v1/public/site.webmanifest
+new file mode 100644
+--- /dev/null	(date 1645637491000)
++++ b/Client/v1/public/site.webmanifest	(date 1645637491000)
+@@ -0,0 +1,19 @@
++{
++    "name": "MovieSwipe",
++    "short_name": "MovieSwipe",
++    "icons": [
++        {
++            "src": "/android-chrome-192x192.png",
++            "sizes": "192x192",
++            "type": "image/png"
++        },
++        {
++            "src": "/android-chrome-512x512.png",
++            "sizes": "512x512",
++            "type": "image/png"
++        }
++    ],
++    "theme_color": "#ffffff",
++    "background_color": "#ffffff",
++    "display": "standalone"
++}
+Index: Client/v1/public/safari-pinned-tab.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Client/v1/public/safari-pinned-tab.svg b/Client/v1/public/safari-pinned-tab.svg
+new file mode 100644
+--- /dev/null	(date 1645637491000)
++++ b/Client/v1/public/safari-pinned-tab.svg	(date 1645637491000)
+@@ -0,0 +1,27 @@
++<?xml version="1.0" standalone="no"?>
++<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
++ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
++<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
++ width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
++ preserveAspectRatio="xMidYMid meet">
++<metadata>
++Created by potrace 1.14, written by Peter Selinger 2001-2017
++</metadata>
++<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
++fill="#000000" stroke="none">
++<path d="M2045 5110 c-208 -43 -365 -206 -396 -410 -6 -41 -13 -81 -15 -88 -3
++-10 -20 -12 -71 -7 -301 29 -564 -229 -539 -529 4 -44 8 -94 9 -110 2 -25 -3
++-30 -38 -41 -159 -48 -288 -177 -337 -338 -17 -58 -20 -85 -15 -170 3 -56 9
++-114 13 -129 l6 -28 -70 0 c-60 0 -75 -4 -99 -24 l-28 -24 0 -201 c0 -258 -10
++-244 178 -251 l132 -5 132 -1290 c73 -710 138 -1307 143 -1327 14 -48 53 -94
++101 -118 35 -18 60 -20 272 -20 l234 0 -4 68 c-3 37 -44 655 -92 1375 l-86
++1307 340 0 340 0 55 -1375 54 -1375 296 0 296 0 54 1375 54 1375 341 0 340 0
++-86 -1307 c-48 -720 -89 -1338 -92 -1375 l-4 -68 234 0 c174 0 242 3 266 14
++43 17 93 76 107 123 6 21 70 618 143 1328 l133 1290 132 5 c187 7 177 -6 177
++251 l0 201 -28 24 c-24 21 -38 24 -102 24 l-73 0 15 48 c23 70 20 212 -6 292
++-48 152 -191 290 -339 330 -42 11 -43 12 -35 43 4 18 8 84 8 148 l0 116 -42
++84 c-96 193 -277 300 -485 286 -84 -6 -88 -3 -88 56 0 93 -65 230 -147 311
++-134 133 -326 179 -500 121 -90 -31 -168 -80 -222 -141 -21 -24 -43 -44 -49
++-44 -6 0 -37 27 -71 60 -117 117 -290 172 -446 140z"/>
++</g>
++</svg>
+Index: .idea/.idea.MovieSwipe.dir/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"de94407f-d8bf-4181-910c-fc24e413e67c\" name=\"Changes\" comment=\"fixed typo\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"lab2\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"24bFU8tiyCVGqEy30ERssGWTgGZ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"javascript.nodejs.core.library.configured.version\" value=\"16.13.2\" />\r\n    <property name=\"javascript.nodejs.core.library.typings.version\" value=\"16.11.25\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"ts.external.directory.path\" value=\"C:\\Users\\Molly\\RiderProjects\\MovieSwipe\\Server\\node_modules\\typescript\\lib\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"de94407f-d8bf-4181-910c-fc24e413e67c\" name=\"Changes\" comment=\"\" />\r\n      <created>1643891392738</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1643891392738</updated>\r\n      <workItem from=\"1643891406906\" duration=\"612000\" />\r\n      <workItem from=\"1644926977710\" duration=\"1026000\" />\r\n      <workItem from=\"1645006957506\" duration=\"6121000\" />\r\n      <workItem from=\"1645090750498\" duration=\"1915000\" />\r\n      <workItem from=\"1645448112451\" duration=\"3573000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Created react template in Client&#10;Added cors to Server\">\r\n      <created>1645613486726</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1645613486726</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"fixed typo\">\r\n      <created>1645613573702</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1645613573702</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"false\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"NUnit\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"lab2\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"Created react template in Client&#10;Added cors to Server\" />\r\n    <MESSAGE value=\"fixed typo\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"fixed typo\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml b/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml
+--- a/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml	(revision 015e67d6f49c414feefde359cdca8f924da8f077)
++++ b/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml	(date 1645637718453)
+@@ -1,7 +1,28 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="de94407f-d8bf-4181-910c-fc24e413e67c" name="Changes" comment="fixed typo" />
++    <list default="true" id="de94407f-d8bf-4181-910c-fc24e413e67c" name="Changes" comment="fixed typo">
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/android-chrome-192x192.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/android-chrome-512x512.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/apple-touch-icon.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/browserconfig.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/favicon-16x16.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/favicon-32x32.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/mstile-150x150.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/safari-pinned-tab.svg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Client/v1/public/site.webmanifest" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Client/v1/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Client/v1/public/favicon.ico" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Client/v1/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/v1/public/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Client/v1/public/logo192.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Client/v1/public/logo512.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Client/v1/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/v1/public/manifest.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Client/v1/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Client/v1/src/App.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Client/v1/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/v1/src/App.tsx" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -15,6 +36,9 @@
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="PackageJsonUpdateNotifier">
++    <dismissed value="$PROJECT_DIR$/Server/package.json" />
++  </component>
+   <component name="ProjectId" id="24bFU8tiyCVGqEy30ERssGWTgGZ" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <ConfirmationsSetting value="2" id="Add" />
+@@ -29,10 +53,14 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="javascript.nodejs.core.library.configured.version" value="16.13.2" />
++    <property name="javascript.nodejs.core.library.configured.version" value="16.13.0" />
+     <property name="javascript.nodejs.core.library.typings.version" value="16.11.25" />
++    <property name="node.js.detected.package.eslint" value="true" />
++    <property name="node.js.detected.package.tslint" value="true" />
++    <property name="node.js.selected.package.eslint" value="(autodetect)" />
++    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+     <property name="nodejs_package_manager_path" value="npm" />
+-    <property name="ts.external.directory.path" value="C:\Users\Molly\RiderProjects\MovieSwipe\Server\node_modules\typescript\lib" />
++    <property name="ts.external.directory.path" value="C:\Users\arian\RiderProjects\MovieSwipe\Server\node_modules\typescript\lib" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -48,6 +76,7 @@
+       <workItem from="1645006957506" duration="6121000" />
+       <workItem from="1645090750498" duration="1915000" />
+       <workItem from="1645448112451" duration="3573000" />
++      <workItem from="1645634079446" duration="2548000" />
+     </task>
+     <task id="LOCAL-00001" summary="Created react template in Client&#10;Added cors to Server">
+       <created>1645613486726</created>
