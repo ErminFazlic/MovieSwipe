@@ -9,7 +9,7 @@ const request : Supertest.SuperTest<Supertest.Test> = Supertest.default
 test("get empty friends list", async () => {
  const usertest : User = {id:new Date().valueOf(), email:"ermin@gmail.com", password:"9999", username:"ermino", liked:[], disliked:[], friends:[]};
 
- const res = await request.get('/users/'+usertest.id.toString+'/friends');
+ const res = await request.get('/users/'+ usertest.id.toString+'/friends');
  expect(res.statusCode).toEqual(200);
 
  expect(res.body).toEqual([]);

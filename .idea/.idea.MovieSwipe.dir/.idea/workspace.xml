@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c4bd665-1951-48dd-867b-8781596c2f9e" name="Changes" comment="" />
+    <list default="true" id="de94407f-d8bf-4181-910c-fc24e413e67c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.MovieSwipe.dir/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/App.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/v1/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieSwipe.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/userintegration.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/userintegration.test.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,12 +37,12 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Mockup" />
+        <entry key="$PROJECT_DIR$" value="lab2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="24q0krroA9CznsOzNtjyy9KY2s7" />
+  <component name="ProjectId" id="24bFU8tiyCVGqEy30ERssGWTgGZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -30,35 +54,28 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.13.2" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.25" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\Molly\RiderProjects\MovieSwipe\Server\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9c4bd665-1951-48dd-867b-8781596c2f9e" name="Changes" comment="" />
-      <created>1644342958148</created>
+      <changelist id="de94407f-d8bf-4181-910c-fc24e413e67c" name="Changes" comment="" />
+      <created>1643891392738</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1644342958148</updated>
-      <workItem from="1644342960499" duration="647000" />
-      <workItem from="1644488207739" duration="421000" />
-      <workItem from="1644488670963" duration="602000" />
-      <workItem from="1644489817943" duration="53000" />
-      <workItem from="1644489911122" duration="265000" />
+      <updated>1643891392738</updated>
+      <workItem from="1643891406906" duration="612000" />
+      <workItem from="1644926977710" duration="1026000" />
+      <workItem from="1645006957506" duration="6121000" />
+      <workItem from="1645090750498" duration="1915000" />
+      <workItem from="1645448112451" duration="3268000" />
     </task>
-    <task id="LOCAL-00001" summary="Lab 2 init commit">
-      <created>1644490090746</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1644490090746</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,10 +84,32 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="lab2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Lab 2 init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 2 init commit" />
   </component>
 </project>
